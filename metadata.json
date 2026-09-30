@@ -1,0 +1,6 @@
+{
+  "name": "Painel de Atletas Nippon",
+  "description": "Painel administrativo para gerenciamento de categorias, equipes e atletas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
