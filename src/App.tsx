@@ -22,7 +22,7 @@ import {
 import FormularioChaves from "./components/FormularioChaves";
 import GalleryAdmin from "./components/GalleryAdmin";
 
-const API_URL = "https://sothink.com.br/centenario26/api/v2/nippon";
+const API_URL = "https://sothink.com.br/apidivas/api/v2/nippon";
 
 export default function App() {
   // State
@@ -155,7 +155,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        "https://sothink.com.br/centenario26/api/v2/nippon/listar?tabela=completo",
+        "https://sothink.com.br/apidivas/api/v2/nippon/listar?tabela=completo",
       );
       if (!response.ok) {
         throw new Error(`Servidor respondeu com status: ${response.status}`);
@@ -350,7 +350,7 @@ export default function App() {
         }
 
         response = await fetch(
-          "https://sothink.com.br/centenario26/api/v2/nippon/inserir",
+          "https://sothink.com.br/apidivas/api/v2/nippon/inserir",
           {
             method: "POST",
             body: formData,
@@ -358,7 +358,7 @@ export default function App() {
         );
       } else {
         response = await fetch(
-          "https://sothink.com.br/centenario26/api/v2/nippon/editar",
+          "https://sothink.com.br/apidivas/api/v2/nippon/editar",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -466,7 +466,7 @@ export default function App() {
         formData.append("titulo", novoTituloCompleto);
 
         const response = await fetch(
-          "https://sothink.com.br/centenario26/api/v2/nippon/inserir",
+          "https://sothink.com.br/apidivas/api/v2/nippon/inserir",
           {
             method: "POST",
             body: formData,
